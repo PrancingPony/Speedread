@@ -1,9 +1,10 @@
-package com.prancingpony.speedread.app;
+package com.prancingpony.speedread.app.activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import com.prancingpony.speedread.app.R;
 
 
 public class MainActivity extends ActionBarActivity {
