@@ -1,16 +1,66 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context=".MainActivity">
+                tools:context=".MainActivity" android:padding="0dp">
 
-    <TextView
-            android:text="@string/hello_world"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+        <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+        </FrameLayout>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="false" android:paddingLeft="20dp">
+                <ImageButton
+                        android:layout_width="44dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/imageButton" android:background="@mipmap/fastrewind" android:clickable="false"/>
+                <ImageButton
+                        android:layout_width="26dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/imageButton3" android:background="@mipmap/play"
+                        android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+                <ImageButton
+                        android:layout_width="43dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/imageButton2" android:layout_alignParentEnd="false"
+                        android:background="@mipmap/fastforward"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_alignParentEnd="false"
+                    android:layout_alignParentLeft="false" android:layout_alignParentRight="true"
+                    android:paddingRight="20dp">
+                <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/imageButton4" android:background="@mipmap/down"
+                        android:layout_marginRight="8dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="New Text"
+                        android:id="@+id/textView"/>
+                <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/imageButton5" android:background="@mipmap/up" android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
 </RelativeLayout>

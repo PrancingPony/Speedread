@@ -3,4 +3,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_statistic">Statistics</string>
+    <string name="title_activity_activity_text_enter">Text Enter</string>
 </resources>
