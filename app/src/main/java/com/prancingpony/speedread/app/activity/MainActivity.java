@@ -1,11 +1,11 @@
 package com.prancingpony.speedread.app.activity;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.prancingpony.speedread.app.R;
-import com.prancingpony.speedread.app.data.accesor.DocumentAccessor;
+import com.prancingpony.speedread.app.data.DataStore;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -14,11 +14,8 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DocumentAccessor dataStore = new DocumentAccessor(this);
-        dataStore.open();
-
-        dataStore.insertDocument("test", "tes", 2, 3);
-        dataStore.close();
+        DataStore dataStore = new DataStore(this);
+        dataStore.insertDocument("viy", "herro", 1, 2);
     }
 
 
